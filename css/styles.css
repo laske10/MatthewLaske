@@ -1,0 +1,580 @@
+/*Color Scheme*/
+/* #Dark Grey: #323E40 */
+/* #Light Tan: #F5D18B */
+/* #Medium Tan: #Db9448 */
+/* #Darker Red: #732002 */
+/* #Lighter Red: #D94D1A */
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 20px;  /* Adjust this value to change the base font size */
+}
+body {
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    line-height: 1.6; /* Improves readability */
+}
+
+hr {
+    border-color: #D94D1A;
+    border-style: dotted none none;
+    border-width: 5px;
+    width: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: width 0.3s ease; /* Animation */
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.5px; /* Improved typography */
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+p, ul li {
+    font-size: 1.2rem;
+}
+
+/* Header */
+.Header {
+    background-color: #323E40;
+    text-align: center;
+    width: 100%;
+}
+
+.Banner {
+    width: 25%;
+    padding: 2% 0;
+}
+
+.nav-link {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Animation */
+}
+
+.navbar {
+    background-color: #732002;
+}
+
+.nav-link {
+    color: #F5D18B;
+}
+
+.nav-link:hover {
+    color: #D94D1A;
+}
+
+.nav_bar_color {
+    background-color: #732002;
+    color: #F5D18B;
+}
+
+.dropdown-menu {
+    background-color: #732002;
+}
+
+.dropdown-item {
+    color: #F5D18B;
+    transition: background-color 0.3s ease; /* Animation */
+}
+
+.dropdown-item:hover {
+    background-color: #D94D1A; /* Hover effect for dropdown items */
+}
+
+/* About Me */
+
+#about-me-carousel {
+    max-height: 800px; /* You can adjust this value */
+    overflow: hidden;
+}
+
+#about-me-carousel {
+    z-index: 1;
+}
+
+.custom-caption {
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: white background with 80% opacity */
+    padding: 10px;
+    border-radius: 5px; /* Optional: rounds the corners */
+}
+
+
+.greeting {
+    padding: 7% 0;
+    background-color: #F5D18B;
+    color: #732002;
+    text-align: center;
+}
+
+.big-heading {
+    font-family: 'Lato';
+    font-size: 3.5rem;
+    line-height: 1.5;
+    padding-left: 10%;
+    letter-spacing: 1px; /* Improved typography */
+}
+
+.heading-p {
+    padding: 7% 0 0 10%;
+    text-align: center;
+}
+
+.profile-image {
+    border-radius: 100%;
+    width: 75%;
+    border-style: dotted;
+    border-color: #D94D1A;
+    border-width: 5px;
+    padding: 8px;
+}
+
+/* Recent News */
+#recent_news {
+    background-color: #732002;
+    padding: 10% 0 5% 0;
+    text-align: center;
+    color: #F5D18B;
+}
+
+.int {
+    margin: 7% 15%;
+    position: relative;
+}
+
+.first-exp-logo, .second-exp-logo, .third-exp-logo {
+    border-radius: 100%;
+    border-style: dotted;
+    border-color: #D94D1A;
+    border-width: 3px;
+    padding: 8px;
+}
+
+.first-exp-logo {
+    width: 35%;
+    float: left;
+    margin-right: 70px;
+}
+
+.second-exp-logo {
+    width: 35%;
+    float: right;
+    margin-left: 70px;
+}
+
+.third-exp-logo {
+    width: 35%;
+    float: left;
+    margin-right: 70px;
+}
+
+.expertise-row {
+    text-align: left;
+    line-height: 2;
+    display: inline-block;
+}
+
+.bottom-container {
+    background-color: #323E40;
+    padding: 50px 0 20px;
+    color: #F5D18B;
+}
+
+.Contact-msg {
+    padding-bottom: 40px;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    padding: 40px 0;
+}
+
+.footer-link {
+    padding: 10px 20px 10px 20px;
+    margin: 0 10px;
+}
+
+/* Interests */
+#interests {
+    background-color: #732002;
+    padding: 10% 0 5% 0;
+    text-align: center;
+    color: #F5D18B;
+}
+
+.int {
+    margin: 7% 15%;
+    position: relative;
+}
+
+.first-exp-logo, .second-exp-logo, .third-exp-logo {
+    border-radius: 100%;
+    border-style: dotted;
+    border-color: #D94D1A;
+    border-width: 3px;
+    padding: 8px;
+}
+
+.first-exp-logo {
+    width: 35%;
+    float: left;
+    margin-right: 70px;
+}
+
+.second-exp-logo {
+    width: 35%;
+    float: right;
+    margin-left: 70px;
+}
+
+.third-exp-logo {
+    width: 35%;
+    float: left;
+    margin-right: 70px;
+}
+
+.expertise-row {
+    text-align: left;
+    line-height: 2;
+    display: inline-block;
+}
+
+.bottom-container {
+    background-color: #323E40;
+    padding: 50px 0 20px;
+    color: #F5D18B;
+}
+
+.Contact-msg {
+    padding-bottom: 40px;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    padding: 40px 0;
+}
+
+.footer-link {
+    padding: 10px 20px 10px 20px;
+    margin: 0 10px;
+}
+
+/* Affiliations */
+.affiliations {
+    background-color: #F5D18B;
+    color: #732002;
+    padding-bottom: 10%;
+}
+
+.afftitle {
+    font-family: 'Lato', sans-serif;
+    padding: 3% 0;
+    letter-spacing: 1px; /* Improved typography */
+}
+
+/* Research */
+#pubs h2 {
+    font-size: 24px;
+}
+
+#pubs h3 {
+    font-size: 20px;
+}
+
+#pubs p {
+    font-size: 14px;
+}
+
+#pubs {
+    padding: 1% 0;
+}
+
+.pubs {
+    background-color: #F5D18B;
+    color: #732002;
+    padding-bottom: 5%;
+}
+
+.pubtitle {
+    font-family: 'Lato', sans-serif;
+    padding: 1% 0;
+    letter-spacing: 1px; /* Improved typography */
+}
+
+.pubtext {
+    text-align: left;
+    font-family: 'Jura', sans-serif;
+    padding: 0 7%;
+}
+
+.publication-style_v2 {
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 2%;
+}
+
+/* Custom Link Color*/ 
+
+.custom-link {
+    color: #732002; /* Your desired link color */
+    text-decoration: none; /* Removes underline */
+}
+
+.custom-link:hover {
+    color: #D94D1A; /* Your desired hover color */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Abstract Button*/
+.abstract-button {
+    background-color: #323E40; /* Background */
+    color: #F5D18B; /* Text */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.abstract-button:hover {
+    background-color: #D94D1A; /* Slightly darker on hover */
+}
+
+
+/* Consulting */
+.consult {
+    background-color: #F5D18B;
+    color: #732002;
+    padding: 5% 0 10%;
+}
+
+.contitle {
+    font-size: 1.75rem;
+    margin: 5% 7% 0;
+    letter-spacing: 1px; /* Improved typography */
+}
+
+.date {
+    font-size: 1.5rem;
+}
+
+.list {
+    text-align: left;
+    margin: 0 10%;
+}
+
+/* About Me */
+#testimonials {
+    background-color: #ef8172;
+}
+
+.about-me-text {
+    font-size: 3rem;
+    line-height: 1.5;
+    letter-spacing: 1px; /* Improved typography */
+}
+
+.about-me-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+
+/*Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: #Db9448;
+}
+
+.imgBox {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+
+.imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will cover the area, cropping the image if necessary */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 70%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 70%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+
+/* Experience Styles */
+.experience {
+    background-color: #F5D18B; /* Light Tan background for the section */
+    color: #323E40; /* Dark Grey text color */
+    padding: 2% 5%; /* Padding around the section */
+    margin: 0 0; /* Margin for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left; /* Align text to the left */
+}
+
+.experience h3 {
+    color: #732002; /* Darker Red for headings */
+    margin-bottom: 0.5em; /* Space below headings */
+    font-size: 1.8rem; /* Slightly larger font for visibility */
+    border-bottom: 2px solid #Db9448; /* Medium Tan border for emphasis */
+    padding-bottom: 0.5em; /* Padding below heading text */
+}
+
+.experience h4 {
+    color: #D94D1A; /* Lighter Red for subheadings */
+    margin-top: 1em; /* Space above subheadings */
+    font-size: 1.5rem; /* Font size for subheadings */
+}
+
+.experience p, .experience ul li {
+    font-size: 1.2rem; /* Readable font size for text */
+    line-height: 1.4; /* Line height for better readability */
+}
+
+.experience ul {
+    padding-left: 20px; /* Indent for lists */
+    list-style-type: circle; /* Style of bullet points */
+}
+
+.experience a {
+    color: #732002; /* Link color matching Darker Red */
+    text-decoration: none; /* No underline for links */
+}
+
+.experience a:hover {
+    color: #D94D1A; /* Lighter Red on hover for links */
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Presentations */
+.presentations {
+    background-color: #F5D18B; /* Light tan background */
+    color: #323E40; /* Dark grey text */
+    padding: 20px;
+    margin: 0 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.presentations h3 {
+    color: #732002; /* Darker red */
+    margin-bottom: 0.5em;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #Db9448; /* Medium tan border */
+    padding-bottom: 0.5em;
+}
+
+.presentations ul {
+    list-style-type: none;
+    padding-left: 0; /* Remove default padding */
+}
+
+.presentations li {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.presentations li a {
+    color: #732002; /* Darker red */
+    text-decoration: none;
+}
+
+.presentations li a:hover {
+    color: #D94D1A; /* Lighter red */
+    text-decoration: underline;
+}
+
+/* Student Comments*/
+.student-comments {
+    background-color: #F5D18B; /* Light tan background */
+    color: #323E40; /* Dark grey text */
+    padding: 20px;
+    margin: 0 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Left align the text */
+}
+
+.student-comments h3 {
+    color: #732002; /* Darker red */
+    margin-bottom: 1em;
+    font-size: 1.8rem;
+}
+
+.comment-container {
+    margin-top: 1em;
+}
+
+blockquote {
+    font-style: italic; /* Italicize the quotes */
+    border-left: 4px solid #732002; /* Darker red border */
+    padding-left: 15px; /* Space before the text */
+    margin: 10px 0; /* Margin around each quote */
+    line-height: 1.5; /* Line height for readability */
+}
