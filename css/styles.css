@@ -138,7 +138,7 @@ p, ul li {
 
 .profile-image {
     border-radius: 100%;
-    width: 75%;
+    width: 100%;
     border-style: dotted;
     border-color: #D94D1A;
     border-width: 5px;
@@ -578,3 +578,4 @@ blockquote {
     margin: 10px 0; /* Margin around each quote */
     line-height: 1.5; /* Line height for readability */
 }
+
