@@ -1,5 +1,4 @@
 /* Matthew M. Laske — Site Scripts */
-
 function enlargeImage(imgSrc, imgDescription) {
   var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("img01");
@@ -11,29 +10,25 @@ function enlargeImage(imgSrc, imgDescription) {
     document.body.style.overflow = "hidden";
   }
 }
-
 function closeModal() {
   var modal = document.getElementById("myModal");
   if (modal) { modal.style.display = "none"; document.body.style.overflow = ""; }
 }
-
 document.addEventListener("keydown", function(e) { if (e.key === "Escape") closeModal(); });
-
-function toggleAbstract(abstractId) {
-  var abstract = document.getElementById(abstractId);
-  if (abstract) abstract.style.display = abstract.style.display === "none" ? "block" : "none";
+function toggleAbstract(id) {
+  var el = document.getElementById(id);
+  if (el) el.style.display = el.style.display === "none" ? "block" : "none";
 }
-
 document.addEventListener("DOMContentLoaded", function() {
-  var fadeEls = document.querySelectorAll(".fade-in");
+  var els = document.querySelectorAll(".fade-in");
   if ("IntersectionObserver" in window) {
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) { entry.target.classList.add("visible"); observer.unobserve(entry.target); }
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add("visible"); obs.unobserve(e.target); }
       });
     }, { threshold: 0.1 });
-    fadeEls.forEach(function(el) { observer.observe(el); });
+    els.forEach(function(el) { obs.observe(el); });
   } else {
-    fadeEls.forEach(function(el) { el.classList.add("visible"); });
+    els.forEach(function(el) { el.classList.add("visible"); });
   }
 });
