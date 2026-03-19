@@ -7,12 +7,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/512df606d2.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
   <header class="Header"><img id="Banner" src="Images/Banner/Signature.png" alt="Matthew M. Laske"></header>
@@ -39,11 +39,10 @@
     </div>
   </nav>
 
-  <!-- PAGE HEADER -->
-  <div style="background:var(--tan); padding:4rem 2rem 2rem; text-align:center;">
+  <div style="background:var(--tan);padding:4rem 2rem 2rem;text-align:center;">
     <div class="container-narrow">
       <div class="section-title fade-in"><h1 style="font-size:2.8rem;">Publications</h1></div>
-      <p style="text-align:center; color:var(--text); font-size:1.1rem; max-width:640px; margin:0 auto;">I seek to improve employee performance and well-being through applied and use-inspired laboratory research.</p>
+      <p style="text-align:center;font-size:1.1rem;max-width:640px;margin:0 auto;">I seek to improve employee performance and well-being through applied and use-inspired laboratory research.</p>
       <div class="research-links" style="margin-top:2rem;">
         <a href="https://orcid.org/0000-0003-0195-5186"><img src="Images/icons/icons8-orcid-32.png" alt="ORCID"> ORCID</a>
         <a href="https://www.researchgate.net/profile/Matthew-Laske"><img src="Images/icons/icons8-researchgate-32.png" alt="RG"> ResearchGate</a>
@@ -53,175 +52,107 @@
     </div>
   </div>
 
-  <!-- BOOK -->
-  <div style="background:var(--tan-light); padding:4rem 2rem;">
+  <div style="background:var(--tan-light);padding:4rem 2rem;">
     <div class="section-title fade-in" style="margin-bottom:2rem;"><h2>Books</h2></div>
     <div class="featured-row fade-in">
-      <div class="featured-img book-cover">
-        <img src="Images/publications/Book.png" alt="The Science and Best Practices of Behavioral Safety">
-      </div>
+      <div class="featured-img book-cover"><img src="Images/publications/Book.png" alt="Behavioral Safety book"></div>
       <div class="featured-text">
         <h2 style="font-size:1.6rem;">The Science and Best Practices of Behavioral Safety: The Source for Reducing Injuries on the Front Line</h2>
-        <p style="color:var(--muted); font-size:.95rem;">Timothy D. Ludwig &amp; <strong>Matthew M. Laske</strong> (2023)</p>
-        <p>This book presents the scientific principles and real-world best practices of behavioral safety &mdash; one of the most mature and impactful applications of behavioral science to reduce injuries in industrial workplaces.</p>
+        <p style="color:var(--muted);font-size:.95rem;">Timothy D. Ludwig &amp; <strong>Matthew M. Laske</strong> (2023)</p>
+        <p>This book presents the scientific principles and real-world best practices of behavioral safety &mdash; one of the most impactful applications of behavioral science to reduce injuries in industrial workplaces.</p>
         <a href="https://www.routledge.com/The-Science-and-Best-Practices-of-Behavioral-Safety-The-Source-for-Red/Laske-Ludwig/p/book/9781032269672" class="btn-cta">View Publication</a>
       </div>
     </div>
   </div>
 
-  <!-- FEATURED ARTICLES -->
-  <div style="background:var(--tan); padding:4rem 2rem;">
+  <div style="background:var(--tan);padding:4rem 2rem;">
     <div class="container-wide">
       <div class="section-title fade-in"><h2>Featured Articles</h2></div>
 
       <div class="pub-featured fade-in">
-        <div class="pub-featured-img">
-          <img src="Images/publications/Laske_et_al_2026_Heat_Map.png" alt="Risk identification strategies for health pandemics and epid" onclick="enlargeImage(this.src, 'Risk identification strategies for health pandemics and epidemics on college cam...')">
-        </div>
+        <div class="pub-featured-img"><img src="Images/publications/Laske_et_al_2026_Heat_Map.png" alt="Risk identification strategies for health pandemic" data-lb-group="articles" data-lb-src="Images/publications/Laske_et_al_2026_Heat_Map.png" data-lb-caption="Risk identification strategies for health pandemics and epidemics on c" onclick="openLightbox('Images/publications/Laske_et_al_2026_Heat_Map.png','Risk identification strategies for health pandemics and epidemics on c','articles')"></div>
         <div class="pub-featured-body">
           <h3><a href="https://www.researchgate.net/publication/388640842">Risk identification strategies for health pandemics and epidemics on college campuses: A comprehensive analysis of heat maps and behavioral observations</a></h3>
           <p class="pub-meta"><strong>Matthew M. Laske</strong>, Allison B. Blackman, Fumihiro Oda, Derek D. Reed, &amp; Florence D. DiGennaro Reed | <em>PLoS One</em>, 2026</p>
-          <p class="pub-desc">This research uses direct observation and click-based campus survey heat maps to identify where safe and at-risk mask-wearing behaviors occurred during COVID-19. By pinpointing spatial patterns of risk, the approach offers actionable data to guide interventions, policy enforcement, and resource allocation during health epidemics.</p>
+          <p class="pub-desc">This research uses direct observation and click-based campus survey heat maps to identify where safe and at-risk mask-wearing behaviors occurred during COVID-19. The approach offers actionable data to guide interventions during health epidemics.</p>
           <a href="https://www.researchgate.net/publication/388640842" class="btn-cta">Read Article</a>
         </div>
       </div>
-
       <div class="pub-featured reverse fade-in">
-        <div class="pub-featured-img">
-          <img src="Images/publications/Laske_DiGennaro_Reed_2024_Disfluencies.png" alt="Um, so, like, do speech disfluencies matter? A parametric ev" onclick="enlargeImage(this.src, 'Um, so, like, do speech disfluencies matter? A parametric evaluation of filler s...')">
-        </div>
+        <div class="pub-featured-img"><img src="Images/publications/Laske_DiGennaro_Reed_2024_Disfluencies.png" alt="Um, so, like, do speech disfluencies matter? A par" data-lb-group="articles" data-lb-src="Images/publications/Laske_DiGennaro_Reed_2024_Disfluencies.png" data-lb-caption="Um, so, like, do speech disfluencies matter? A parametric evaluation o" onclick="openLightbox('Images/publications/Laske_DiGennaro_Reed_2024_Disfluencies.png','Um, so, like, do speech disfluencies matter? A parametric evaluation o','articles')"></div>
         <div class="pub-featured-body">
           <h3><a href="https://www.researchgate.net/publication/381043517">Um, so, like, do speech disfluencies matter? A parametric evaluation of filler sounds and words</a></h3>
           <p class="pub-meta"><strong>Matthew M. Laske</strong> &amp; Florence D. DiGennaro Reed | <em>Journal of Applied Behavior Analysis</em>, 57(3), 2024</p>
-          <p class="pub-desc">Discover how filler sounds and words like &ldquo;um&rdquo; and &ldquo;like&rdquo; shape audience perceptions of public speaking effectiveness. This study determines when disfluencies start to hurt &mdash; and when a few may actually be just fine.</p>
+          <p class="pub-desc">Discover how filler sounds like um and like shape audience perceptions of public speaking effectiveness. This study determines when disfluencies hurt and when a few may be just fine.</p>
           <a href="https://www.researchgate.net/publication/381043517" class="btn-cta">Read Article</a>
         </div>
       </div>
-
       <div class="pub-featured fade-in">
-        <div class="pub-featured-img">
-          <img src="Images/publications/Laske_et_al_2024_BST_AT.png" alt="The efficacy of remote video-based behavioral skills trainin" onclick="enlargeImage(this.src, 'The efficacy of remote video-based behavioral skills training and awareness trai...')">
-        </div>
+        <div class="pub-featured-img"><img src="Images/publications/Laske_et_al_2024_BST_AT.png" alt="The efficacy of remote video-based behavioral skil" data-lb-group="articles" data-lb-src="Images/publications/Laske_et_al_2024_BST_AT.png" data-lb-caption="The efficacy of remote video-based behavioral skills training and awar" onclick="openLightbox('Images/publications/Laske_et_al_2024_BST_AT.png','The efficacy of remote video-based behavioral skills training and awar','articles')"></div>
         <div class="pub-featured-body">
           <h3><a href="https://www.researchgate.net/publication/374890507">The efficacy of remote video-based behavioral skills training and awareness training on public speaking performance</a></h3>
           <p class="pub-meta"><strong>Matthew M. Laske</strong>, Florence D. DiGennaro Reed, &amp; J Turner Butler Braren | <em>Journal of Applied Behavior Analysis</em>, 57(1), 2024 | Wiley Top Cited Article Award</p>
-          <p class="pub-desc">Explore how video-based training can boost public speaking skills and reduce distracting filler words. This study shows how structured outlines and awareness strategies help speakers become more confident and effective.</p>
+          <p class="pub-desc">Explore how video-based training can boost public speaking skills and reduce distracting filler words through structured outlines and awareness strategies.</p>
           <a href="https://www.researchgate.net/publication/374890507" class="btn-cta">Read Article</a>
         </div>
       </div>
-
       <div class="pub-featured reverse fade-in">
-        <div class="pub-featured-img">
-          <img src="Images/publications/Laske_et_al_2022_Schedules.png" alt="Do employees' work schedules put them at-risk? The role of s" onclick="enlargeImage(this.src, 'Do employees' work schedules put them at-risk? The role of shift scheduling and ...')">
-        </div>
+        <div class="pub-featured-img"><img src="Images/publications/Laske_et_al_2022_Schedules.png" alt="Do employees' work schedules put them at-risk? The" data-lb-group="articles" data-lb-src="Images/publications/Laske_et_al_2022_Schedules.png" data-lb-caption="Do employees\' work schedules put them at-risk? The role of shift sched" onclick="openLightbox('Images/publications/Laske_et_al_2022_Schedules.png','Do employees\' work schedules put them at-risk? The role of shift sched','articles')"></div>
         <div class="pub-featured-body">
           <h3><a href="https://www.researchgate.net/publication/362638285">Do employees' work schedules put them at-risk? The role of shift scheduling and holidays in predicting near miss and incident likelihood</a></h3>
-          <p class="pub-meta"><strong>Matthew M. Laske</strong>, Philip E. Hinson, Yalçın Açıkgöz, Timothy D. Ludwig, Anne M. Foreman, &amp; Shawn M. Bergman | <em>Journal of Safety Research</em>, 83(1), 2022</p>
-          <p class="pub-desc">This study shows how long stretches of consecutive shifts &mdash; especially fourth consecutive 12-hour shifts &mdash; raise the likelihood of workplace incidents. Insights help organizations design safer schedules.</p>
+          <p class="pub-meta"><strong>Matthew M. Laske</strong>, Philip E. Hinson, Yalcin Acikgoz, Timothy D. Ludwig, Anne M. Foreman, &amp; Shawn M. Bergman | <em>Journal of Safety Research</em>, 83(1), 2022</p>
+          <p class="pub-desc">This study shows how consecutive shifts raise the likelihood of workplace incidents. Insights help organizations design safer schedules.</p>
           <a href="https://www.researchgate.net/publication/362638285" class="btn-cta">Read Article</a>
         </div>
       </div>
-
       <div class="pub-featured fade-in">
-        <div class="pub-featured-img">
-          <img src="Images/publications/Ludwig_Laske_2023_Safety.png" alt="Behavioral safety: An efficacious application of applied beh" onclick="enlargeImage(this.src, 'Behavioral safety: An efficacious application of applied behavior analysis to re...')">
-        </div>
+        <div class="pub-featured-img"><img src="Images/publications/Ludwig_Laske_2023_Safety.png" alt="Behavioral safety: An efficacious application of a" data-lb-group="articles" data-lb-src="Images/publications/Ludwig_Laske_2023_Safety.png" data-lb-caption="Behavioral safety: An efficacious application of applied behavior anal" onclick="openLightbox('Images/publications/Ludwig_Laske_2023_Safety.png','Behavioral safety: An efficacious application of applied behavior anal','articles')"></div>
         <div class="pub-featured-body">
           <h3><a href="https://www.researchgate.net/publication/362558039">Behavioral safety: An efficacious application of applied behavior analysis to reduce human suffering</a></h3>
           <p class="pub-meta">Timothy D. Ludwig &amp; <strong>Matthew M. Laske</strong> | <em>Journal of Organizational Behavior Management</em>, 43(3), 2023</p>
-          <p class="pub-desc">Reviews the core components of behavioral safety processes, the extension of modern OBM methodologies, and best practices from world-class programs accredited by the Cambridge Center for Behavioral Studies.</p>
+          <p class="pub-desc">Reviews core components of behavioral safety processes and best practices from world-class programs accredited by the Cambridge Center for Behavioral Studies.</p>
           <a href="https://www.researchgate.net/publication/362558039" class="btn-cta">Read Article</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ALL ARTICLES -->
-  <div style="background:var(--tan-light); padding:3rem 2rem;">
+  <div style="background:var(--tan-light);padding:3rem 2rem;">
     <div class="container-narrow">
       <div class="section-title fade-in"><h2>All Peer-Reviewed Articles (<em>n</em> = 9)</h2></div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://www.researchgate.net/publication/388640842">Risk identification strategies for health pandemics and epidemics on college campuses</a></h3>
-        <p class="pub-meta">2026 | <strong>Laske, M. M.</strong>, Blackman, A. B., Oda, F., Reed, D. D., &amp; DiGennaro Reed, F. D. | <em>PLoS One</em> | IF: 2.4, Q1</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://www.researchgate.net/publication/389519210">Teaching self-advocacy skills to direct care staff</a></h3>
-        <p class="pub-meta">2026 | Turner, J. B. B., DiGennaro Reed, F. D., Vance, H., Bartle, G. E., Goben, E. J., <strong>Laske, M. M.</strong>, Ruby, S. A., &amp; Sellers, T. P. | <em>Journal of Applied Behavior Analysis</em> | IF: 2.9, Q1</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://www.researchgate.net/publication/381043517">Um, so, like, do speech disfluencies matter? A parametric evaluation of filler sounds and words</a></h3>
-        <p class="pub-meta">2024 | <strong>Laske, M. M.</strong> &amp; DiGennaro Reed, F. D. | <em>Journal of Applied Behavior Analysis</em>, 57(3) | IF: 2.9, Q1</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://www.researchgate.net/publication/374890507">The efficacy of remote video-based behavioral skills training and awareness training on public speaking performance</a></h3>
-        <p class="pub-meta">2024 | <strong>Laske, M. M.</strong>, DiGennaro Reed, F. D., &amp; Braren, J. T. B. | <em>Journal of Applied Behavior Analysis</em>, 57(1) | Wiley Top Cited Article Award | IF: 2.9, Q1</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://www.researchgate.net/publication/371691977">The advancement of training within business using behavior-based instructional design</a></h3>
-        <p class="pub-meta">2024 | Johnson, D. A., Li, A., Mccaplin, A. L., &amp; <strong>Laske, M. M.</strong> | <em>Journal of Organizational Behavior Management</em>, 44(2) | IF: 2.2</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://www.researchgate.net/publication/362558039">Behavioral safety: An efficacious application of applied behavior analysis to reduce human suffering</a></h3>
-        <p class="pub-meta">2023 | Ludwig, T. D. &amp; <strong>Laske, M. M.</strong> | <em>Journal of Organizational Behavior Management</em>, 43(3) | IF: 2.2</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://www.researchgate.net/publication/362638285">Do employees' work schedules put them at-risk? The role of shift scheduling and holidays in predicting near miss and incident likelihood</a></h3>
-        <p class="pub-meta">2022 | <strong>Laske, M. M.</strong>, Hinson, P. E., Açıkgöz, Y., Ludwig, T. D., Foreman, A. M., &amp; Bergman, S. M. | <em>Journal of Safety Research</em>, 83(1) | IF: 3.9, Q1</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://www.researchgate.net/publication/362107902">The efficacy of remote video-based training on public speaking</a></h3>
-        <p class="pub-meta">2022 | <strong>Laske, M. M.</strong> &amp; DiGennaro Reed, F. D. | <em>Journal of Applied Behavior Analysis</em>, 55(4) | IF: 2.9, Q1</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://www.researchgate.net/publication/345263579">Justice perceptions of artificial intelligence in selection</a></h3>
-        <p class="pub-meta">2020 | Açıkgöz, Y., Davison, K., Compagnone, M. E., &amp; <strong>Laske, M. M.</strong> | <em>International Journal of Selection and Assessment</em>, 28(4) | Wiley Top Cited Article Award | IF: 2.6, Q1</p>
-      </div>
+      <div class="pub-compact fade-in"><h3><a href="https://www.researchgate.net/publication/388640842">Risk identification strategies for health pandemics and epidemics on college campuses</a></h3><p class="pub-meta">2026 | <strong>Laske, M. M.</strong>, Blackman, A. B., Oda, F., Reed, D. D., &amp; DiGennaro Reed, F. D. | <em>PLoS One</em> | IF: 2.4, Q1</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://www.researchgate.net/publication/389519210">Teaching self-advocacy skills to direct care staff</a></h3><p class="pub-meta">2026 | Turner, J. B. B., DiGennaro Reed, F. D., Vance, H., Bartle, G. E., Goben, E. J., <strong>Laske, M. M.</strong>, Ruby, S. A., &amp; Sellers, T. P. | <em>Journal of Applied Behavior Analysis</em> | IF: 2.9, Q1</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://www.researchgate.net/publication/381043517">Um, so, like, do speech disfluencies matter? A parametric evaluation of filler sounds and words</a></h3><p class="pub-meta">2024 | <strong>Laske, M. M.</strong> &amp; DiGennaro Reed, F. D. | <em>Journal of Applied Behavior Analysis</em>, 57(3) | IF: 2.9, Q1</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://www.researchgate.net/publication/374890507">The efficacy of remote video-based behavioral skills training and awareness training on public speaking performance</a></h3><p class="pub-meta">2024 | <strong>Laske, M. M.</strong>, DiGennaro Reed, F. D., &amp; Braren, J. T. B. | <em>Journal of Applied Behavior Analysis</em>, 57(1) | Wiley Top Cited Article Award | IF: 2.9, Q1</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://www.researchgate.net/publication/371691977">The advancement of training within business using behavior-based instructional design</a></h3><p class="pub-meta">2024 | Johnson, D. A., Li, A., Mccaplin, A. L., &amp; <strong>Laske, M. M.</strong> | <em>Journal of Organizational Behavior Management</em>, 44(2) | IF: 2.2</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://www.researchgate.net/publication/362558039">Behavioral safety: An efficacious application of applied behavior analysis to reduce human suffering</a></h3><p class="pub-meta">2023 | Ludwig, T. D. &amp; <strong>Laske, M. M.</strong> | <em>Journal of Organizational Behavior Management</em>, 43(3) | IF: 2.2</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://www.researchgate.net/publication/362638285">Do employees' work schedules put them at-risk?</a></h3><p class="pub-meta">2022 | <strong>Laske, M. M.</strong>, Hinson, P. E., Acikgoz, Y., Ludwig, T. D., Foreman, A. M., &amp; Bergman, S. M. | <em>Journal of Safety Research</em>, 83(1) | IF: 3.9, Q1</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://www.researchgate.net/publication/362107902">The efficacy of remote video-based training on public speaking</a></h3><p class="pub-meta">2022 | <strong>Laske, M. M.</strong> &amp; DiGennaro Reed, F. D. | <em>Journal of Applied Behavior Analysis</em>, 55(4) | IF: 2.9, Q1</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://www.researchgate.net/publication/345263579">Justice perceptions of artificial intelligence in selection</a></h3><p class="pub-meta">2020 | Acikgoz, Y., Davison, K., Compagnone, M. E., &amp; <strong>Laske, M. M.</strong> | <em>International Journal of Selection and Assessment</em>, 28(4) | Wiley Top Cited Article Award | IF: 2.6, Q1</p></div>
     </div>
   </div>
 
-  <!-- BOOK CHAPTERS -->
-  <div style="background:var(--tan); padding:3rem 2rem;">
+  <div style="background:var(--tan);padding:3rem 2rem;">
     <div class="container-narrow">
       <div class="section-title fade-in"><h2>Book Chapters (<em>n</em> = 7)</h2></div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://doi.org/10.1016/B978-0-443-22358-7.00010-1">Better business through behavioral science: An introduction to organizational behavior management</a></h3>
-        <p class="pub-meta">2026 | Johnson, D. A., Cymbal, D., &amp; <strong>Laske, M. M.</strong> | In: Applied Behavior Analysis for Business and Technology Applications</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://doi.org/10.1016/B978-0-443-22365-5.00016-0">Optimizing service delivery in applied behavior analysis: A primer in organizational behavior management</a></h3>
-        <p class="pub-meta">2025 | Ludwig, T. D. &amp; <strong>Laske, M. M.</strong> | In: Clinical and Organizational Applications of Applied Behavior Analysis (2nd Ed.)</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="http://dx.doi.org/10.1007/978-3-031-91607-6_8">Pyramidal staff training</a></h3>
-        <p class="pub-meta">2025 | DiGennaro Reed, F. D., Bartle, G. E., Goben, E. J., &amp; <strong>Laske, M. M.</strong> | In: Clinical Handbook of Autism Intervention Training</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://doi.org/10.4324/9781032708331">The advancement of training within business using behavior-based instructional design</a></h3>
-        <p class="pub-meta">2024 | Johnson, D. A., Li, A., Mccaplin, A. L., &amp; <strong>Laske, M. M.</strong> | In: Handbook of Organizational Performance, Volume II</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://doi.org/10.4324/9781032708331">Behavioral safety: An efficacious application of applied behavior analysis to reduce human suffering</a></h3>
-        <p class="pub-meta">2024 | Ludwig, T. D. &amp; <strong>Laske, M. M.</strong> | In: Handbook of Organizational Performance, Volume II</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://doi.org/10.1016/B978-0-323-99594-8.00004-0">Video Modeling</a></h3>
-        <p class="pub-meta">2023 | DiGennaro Reed, F. D., Ruby, S. A., <strong>Laske, M. M.</strong>, &amp; Vladescu, J. C. | In: Applied Behavior Analysis Advanced Guidebook (2nd Ed.)</p>
-      </div>
-      <div class="pub-compact fade-in">
-        <h3><a href="https://doi.org/10.1007/978-3-319-69891-5_216-1">Personnel security: Retention</a></h3>
-        <p class="pub-meta">2020 | <strong>Laske, M. M.</strong>, Compagnone, M. E., &amp; Açıkgöz, Y. | In: Encyclopedia of Security and Emergency Management</p>
-      </div>
+      <div class="pub-compact fade-in"><h3><a href="https://doi.org/10.1016/B978-0-443-22358-7.00010-1">Better business through behavioral science: An introduction to organizational behavior management</a></h3><p class="pub-meta">2026 | Johnson, D. A., Cymbal, D., &amp; <strong>Laske, M. M.</strong> | In: Applied Behavior Analysis for Business and Technology Applications</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://doi.org/10.1016/B978-0-443-22365-5.00016-0">Optimizing service delivery in applied behavior analysis: A primer in organizational behavior management</a></h3><p class="pub-meta">2025 | Ludwig, T. D. &amp; <strong>Laske, M. M.</strong> | In: Clinical and Organizational Applications of ABA (2nd Ed.)</p></div>
+      <div class="pub-compact fade-in"><h3><a href="http://dx.doi.org/10.1007/978-3-031-91607-6_8">Pyramidal staff training</a></h3><p class="pub-meta">2025 | DiGennaro Reed, F. D., Bartle, G. E., Goben, E. J., &amp; <strong>Laske, M. M.</strong> | In: Clinical Handbook of Autism Intervention Training</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://doi.org/10.4324/9781032708331">The advancement of training within business using behavior-based instructional design</a></h3><p class="pub-meta">2024 | Johnson, D. A., Li, A., Mccaplin, A. L., &amp; <strong>Laske, M. M.</strong> | In: Handbook of Organizational Performance, Vol. II</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://doi.org/10.4324/9781032708331">Behavioral safety: An efficacious application of ABA to reduce human suffering</a></h3><p class="pub-meta">2024 | Ludwig, T. D. &amp; <strong>Laske, M. M.</strong> | In: Handbook of Organizational Performance, Vol. II</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://doi.org/10.1016/B978-0-323-99594-8.00004-0">Video Modeling</a></h3><p class="pub-meta">2023 | DiGennaro Reed, F. D., Ruby, S. A., <strong>Laske, M. M.</strong>, &amp; Vladescu, J. C. | In: ABA Advanced Guidebook (2nd Ed.)</p></div>
+      <div class="pub-compact fade-in"><h3><a href="https://doi.org/10.1007/978-3-319-69891-5_216-1">Personnel security: Retention</a></h3><p class="pub-meta">2020 | <strong>Laske, M. M.</strong>, Compagnone, M. E., &amp; Acikgoz, Y. | In: Encyclopedia of Security and Emergency Management</p></div>
     </div>
   </div>
 
-  <!-- IMAGE MODAL -->
-  <div id="myModal" class="modal" onclick="closeModal()">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="img01" alt="">
-    <div id="caption"></div>
+  <div id="lightbox" class="lightbox-overlay" onclick="if(event.target===this)closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-nav prev" onclick="event.stopPropagation();lbNav(-1)">&#8249;</button>
+    <button class="lightbox-nav next" onclick="event.stopPropagation();lbNav(1)">&#8250;</button>
+    <img src="" alt="">
+    <div class="lightbox-caption"></div>
   </div>
 
-  <!-- CONTACT -->
   <div id="Contact">
     <div class="bottom-container">
       <h2 class="Contact-msg">Let's connect &mdash; I'd love to hear from you.</h2>
