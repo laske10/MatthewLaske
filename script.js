@@ -1,45 +1,39 @@
-function enlargeImage(imgSrc, imgDescription) {
-    var modal = document.getElementById("myModal");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
+/* Matthew M. Laske — Site Scripts */
 
-    modal.style.display = "block";
+function enlargeImage(imgSrc, imgDescription) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  if (modal && modalImg) {
+    modal.style.display = "flex";
     modalImg.src = imgSrc;
-    captionText.innerHTML = imgDescription;
+    if (captionText) captionText.innerHTML = imgDescription;
+    document.body.style.overflow = "hidden";
+  }
 }
 
 function closeModal() {
-    var modal = document.getElementById("myModal");
-    modal.style.display = "none";
+  var modal = document.getElementById("myModal");
+  if (modal) { modal.style.display = "none"; document.body.style.overflow = ""; }
 }
+
+document.addEventListener("keydown", function(e) { if (e.key === "Escape") closeModal(); });
 
 function toggleAbstract(abstractId) {
-    var abstract = document.getElementById(abstractId);
-    if (abstract.style.display === "none") {
-        abstract.style.display = "block";
-    } else {
-        abstract.style.display = "none";
-    }
+  var abstract = document.getElementById(abstractId);
+  if (abstract) abstract.style.display = abstract.style.display === "none" ? "block" : "none";
 }
 
-/* Comments Cylce */
-let currentGroup = 0;
-const groups = document.querySelectorAll('.comments-group');
-const totalGroups = groups.length;
-
-function cycleComments() {
-    // Hide all groups
-    groups.forEach(group => group.style.display = 'none');
-
-    // Show the current group
-    groups[currentGroup].style.display = 'block';
-
-    // Increment or reset the current group
-    currentGroup = (currentGroup + 1) % totalGroups;
-}
-
-// Initial call to display the first group
-cycleComments();
-
-// Set the interval to cycle through comments
-setInterval(cycleComments, 10000); // 10000 milliseconds = 10 seconds
+document.addEventListener("DOMContentLoaded", function() {
+  var fadeEls = document.querySelectorAll(".fade-in");
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) { entry.target.classList.add("visible"); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(function(el) { observer.observe(el); });
+  } else {
+    fadeEls.forEach(function(el) { el.classList.add("visible"); });
+  }
+});

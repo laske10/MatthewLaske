@@ -1,143 +1,168 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matthew M. Laske</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap CSS -->
+  <title>Presentations — Matthew M. Laske</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/512df606d2.js" crossorigin="anonymous"></script>
-
-  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-  <!-- Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-
-  <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
+  <style>
+    .pres-section ul { list-style:none; padding:0; }
+    .pres-section li { font-size:.95rem; line-height:1.65; padding:.7rem 0 .7rem 1rem; border-left:3px solid transparent; transition:all var(--transition); border-bottom:1px solid rgba(115,32,2,.06); }
+    .pres-section li:hover { border-left-color:var(--warm-red); background:rgba(255,255,255,.25); }
+    .pres-section li.hidden-item { display:none; }
+    .pres-section li.hidden-item.shown { display:list-item; }
+    .expand-btn { display:inline-block; font-family:'Source Sans 3',sans-serif; font-weight:600; font-size:.88rem; color:var(--deep-red); background:transparent; border:1.5px solid var(--deep-red); border-radius:6px; padding:.4rem 1.2rem; cursor:pointer; transition:all var(--transition); margin-top:.8rem; }
+    .expand-btn:hover { background:var(--deep-red); color:#fff; }
+  </style>
 </head>
-
 <body>
-  <!-- Header -->
-  <header class="Header">
-    <img id="Banner" src="Images/Banner/Signature.png" alt="Matthew M. Laske Banner" height="350">
-  </header>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #732002;">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <header class="Header"><img id="Banner" src="Images/Banner/Signature.png" alt="Matthew M. Laske"></header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="consulting.html">Applied Roles</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="research.html">Research</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="consulting.html">Applied Roles</a></li>
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Teaching
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Teaching</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="teaching_philosophy.html">My Teaching Philosophy</a>
             <a class="dropdown-item" href="teaching_courses.html">Courses Taught</a>
             <a class="dropdown-item" href="teaching_evaluations.html">Student Comments</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="presentations.html">Presentations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="files/CV/Laske - CV.pdf">CV</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Contact">Contact</a>
-        </li>
+        <li class="nav-item active"><a class="nav-link" href="presentations.html">Presentations</a></li>
+        <li class="nav-item"><a class="nav-link" href="files/CV/Laske - CV.pdf">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  
-<div class="presentations">
-    <h3>INVITED PRESENTATIONS</h3>
-    <ul>
-        <!-- Add each presentation as a list item -->
+  <div class="presentations fade-in">
+
+    <!-- INVITED PRESENTATIONS (14) -->
+    <div class="pres-section" id="invited">
+      <h3>Invited Presentations</h3>
+      <ul>
         <li>Laske, M. M. (2026, April 9-12). Communicating with purpose: Behavior-analytic strategies for professional presentations [Paper presentation]. TxABA 41st Annual Conference, San Antonio, TX.</li>
         <li>Laske, M. M. (2024, November 18). Leveraging behavioral science for occupational safety: Practical insights from field and lab case studies [Paper presentation]. Jim McNatt Institute for Logistics Research: Research Series. University of North Texas, Denton, TX.</li>
         <li>Laske, M. M. (2024, July 17-18). Facilitating top-tier conversations: Maximizing discussion, engagement, and root cause assessment in the field [Conference Session]. Marathon Petroleum Company: Illinois Refining Division Behavioral Based Safety Conference, Robinson, IL.</li>
-        <li>Laske, M. M. (2024,  June 13-15). Facilitating top-tier conversations: Maximizing discussion, engagement, and root cause assessment in the field [Conference Session]. European Conference on Applied Behavior Analysis, Milan, Italy.</li>
-        <li>Laske, M. M. (2023, September 19-20). Facilitating top-tier conversations: Maximizing discussion, engagement, and root cause assessment in the field [Conference Session]. Appalachian Safety Summit 9th Annual Conference, Boone, NC.</li>
-        <li>Laske, M. M. (2023, June 17-19). Are terms like “culture,” “engagement,” and “incivility” behavioral? Using concept analysis to understand complex phenomena in organizations [Conference Session]. Black Applied Behavior Analysis Conference, Detroit, MI.</li>
-        <li>Laske, M. M. (2022, November 9). So you want to do data analytics? Top five barriers to getting started and how to get past them [Conference session]. Electric Power Research Institute, P62 Occupational Health and Safety Workshops: Human Performance & Predictive Analytics, Chicago, IL.</li>
-        <li>Laske, M. M. (2022, July 13-15). So you want to do data analytics? Top five barriers to getting started and how to get past them [Conference session]. Marathon Petroleum Company: Illinois Refining Division Behavioral Based Safety Conference, Robinson, IL.</li>
-        <li>Laske, M. M. (2022, July 13-15). Top tier field conversations: The perfect recipe [Conference session]. Marathon Petroleum Company: Illinois Refining Division Behavioral Based Safety Conference, Robinson, IL.</li>
-        <li>Laske, M. M. (2022, July 13-15). A stone-age battle: Manager vs. employee roles in safety [Conference session]. Marathon Petroleum Company: Illinois Refining Division Behavioral Based Safety Conference, Robinson, IL.</li>
-        <!-- Repeat for other presentations -->
-    </ul>
+        <li class="hidden-item">Laske, M. M. (2024, June 13-15). Facilitating top-tier conversations: Maximizing discussion, engagement, and root cause assessment in the field [Conference Session]. European Conference on Applied Behavior Analysis, Milan, Italy.</li>
+        <li class="hidden-item">Laske, M. M. (2024, April 19). My journey in public speaking research: A case study in scientific method [Paper presentation]. Professional Seminar Series: University of Kansas, Lawrence, KS.</li>
+        <li class="hidden-item">Laske, M. M. (2023, September 22). My journey in public speaking research: A case study in scientific method [Conference Session]. Research Colloquium (Alumni Presentation), Department of Psychology: Western Michigan University, Kalamazoo, MI.</li>
+        <li class="hidden-item">Laske, M. M. (2023, September 19-20). Facilitating top-tier conversations: Maximizing discussion, engagement, and root cause assessment in the field [Conference Session]. Appalachian Safety Summit 9th Annual Conference, Boone, NC.</li>
+        <li class="hidden-item">Laske, M. M. (2023, June 17-19). Are terms like "culture," "engagement," and "incivility" behavioral? Using concept analysis to understand complex phenomena in organizations [Conference Session]. Black Applied Behavior Analysis Conference, Detroit, MI.</li>
+        <li class="hidden-item">Laske, M. M. (2022, November 9). So you want to do data analytics? Top five barriers to getting started and how to get past them [Conference session]. Electric Power Research Institute, P62 Occupational Health and Safety Workshops, Chicago, IL.</li>
+        <li class="hidden-item">Laske, M. M. (2022, July 13-15). So you want to do data analytics? Top five barriers to getting started and how to get past them [Conference session]. Marathon Petroleum Company, Robinson, IL.</li>
+        <li class="hidden-item">Laske, M. M. (2022, July 13-15). Top tier field conversations: The perfect recipe [Conference session]. Marathon Petroleum Company, Robinson, IL.</li>
+        <li class="hidden-item">Laske, M. M. (2022, July 13-15). A stone-age battle: Manager vs. employee roles in safety [Conference session]. Marathon Petroleum Company, Robinson, IL.</li>
+        <li class="hidden-item">Laske, M. M. (2020, April 16). Barriers to employee safety: Improving safety with employee driven processes [Conference session]. 26th Annual ASSP Western Carolina Safety School, Hickory, NC. (Conference canceled: COVID-19)</li>
+        <li class="hidden-item">Laske, M. M. (2019, October 3). The eighth deadly sin… Pencil whipping [Conference Session]. Western Piedmont Safety Council 40th Annual Industrial Safety Workshop, Lenoir, NC.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleSection('invited')">Show All (14)</button>
+    </div>
 
-    <h3>WORKSHOPS</h3>
-    <ul>
+    <!-- WORKSHOPS (5) -->
+    <div class="pres-section" id="workshops">
+      <h3>Workshops</h3>
+      <ul>
         <li>Laske, M. M. (2026, May 21-25). Preparing and delivering professional presentations: A framework for public speaking to any audience [Conference workshop]. Association for Behavior Analysis International 52nd Annual Conference, San Francisco, CA.</li>
+        <li>Laske, M. M. (2025, July 14-15). Goal setting and performance management [Industry workshops]. Behavior Analysis Certification Board, Denver, CO.</li>
         <li>Laske, M. M. (2025, April 24-27). Public speaking skills for scientists and practitioners: Preparing and delivering professional presentations [Conference workshop]. TxABA 40th Annual Conference, Dallas, TX.</li>
-        <li>Reed, D. D., & Laske, M. M. (2023, May 26). Improving public speaking skills for dissemination-focused presentations [Conference workshop]. Association for Behavior Analysis International 49th Annual Conference, Denver, CO.</li>
-        <li>Laske, M. M. (2023, February 2-10).  Facilitating top-tier conversations in occupational safety [Industry workshops]. Eastman Chemical Company, Kingsport, TN.</li>
-    </ul>
+        <li class="hidden-item">Reed, D. D., &amp; Laske, M. M. (2023, May 26). Improving public speaking skills for dissemination-focused presentations [Conference workshop]. Association for Behavior Analysis International 49th Annual Conference, Denver, CO.</li>
+        <li class="hidden-item">Laske, M. M. (2023, February 2-10). Facilitating top-tier conversations in occupational safety [Industry workshops]. Eastman Chemical Company, Kingsport, TN.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleSection('workshops')">Show All (5)</button>
+    </div>
 
-    <h3>PROFESSIONAL PRESENTATIONS †Indicates student contributor *indicates presenter</h3>
-    <ul>
-        <li>*Laske, M. M., Leslie, S., Goben, E. J., & DiGennaro Reed, F. D. (2026, May 21-25). The effects of filler sounds, speaker gender, and race on perceived speaking effectiveness and learning outcomes. In M.M. Laske (Chair) Advancements in public speaking research: What causes speech disfluencies and how they impact your audience’s impressions and learning [Symposium]. Association for Behavior Analysis International 52nd Annual Conference, San Francisco, CA.</li>
-        <li>*†Bradley, A., Laske, M. M., †McDaniel, C., †Salazar, I., Dunham, R. & Sleiman, A. (2026, May 21-25). We have always done it that way and nothing went wrong: Variables contributing to deviation in work safety. In N. Matey (Chair) Fighting complacency: Methods for predicting and avoiding noncompliance to create safer workplaces [Symposium]. Association for Behavior Analysis International 52nd Annual Conference, San Francisco, CA.</li>
-        <li> Sleiman, A., *Olasfdottir, A., Dunham, R., †Bradley, A., †McDaniel, C., †Salazar, I., & Laske, M. M. (2026, May 21-25). Exploring behavioral patterns and risks in a simulated work safety task. In N. Matey (Chair) Fighting complacency: Methods for predicting and avoiding noncompliance to create safer workplaces [Symposium]. Association for Behavior Analysis International 52nd Annual Conference, San Francisco, CA.</li>
-        <li>*†Bradley, A., *†McDaniel, C., & *†Olivieri, J. (2025, November 14). Habits, heat maps, and headlines: From workplace safety decisions to public discourse. In M. M. Laske (Chair) Research advancements in the organization and communication sciences laboratory [Symposium]. Behavior Analysis Research Colloquium: University of North Texas, Denton, TX.</li>
-        <li>*Laske, M. M. & DiGennaro Reed, F. D. (2025, May 27-29). Um, so, like, do speech disfluencies matter? A parametric evaluation of filler sounds and words. In M. M. Laske (Chair) Public speaking for behavior analysts: Advancements in applied and translational public speaking research [Symposium]. Association for Behavior Analysis International 51st Annual Conference, Washington, DC.</li>
-        <li>Laske, M. M. (2024, October 11). My journey in public speaking research: A case study in scientific method [Paper presentation]. Behavior Analysis Research Colloquium: University of North Texas, Denton, TX.</li>
-        <li>*Giani, L., Ghezzi, G. A., Mazzola, D., & Laske, M. M. (2024, May 25-27). Improving safety leadership performance: An evaluation of behavior-based leadership checklists and group comparisons on safety meetings performance. In H. M. McGee (Chair) Behavioral safety across industries [Symposium]. Association for Behavior Analysis International 50th Annual Conference, Philadelphia, PA.</li>
-        <li>*Laske, M. M., DiGennaro Reed, F. D., & Braren, J. T. B. (2023, May 27-29). Um, so, like… How do we train public speaking? In M. M. Laske (Chair) Public speaking for behavior analysts: From mock interviews to speeches [Symposium]. Association for Behavior Analysis International 49th Annual Conference, Denver, CO.</li>
-        <li>Ludwig, T. D., Leslie, J., Açıkgöz, Y., Bergman, S., Granowsky, N., & *Laske, M. M.  (2023, May 27-29). Safety analytics in three organizations suggest the probability of injury decreases after a behavioral safety observation. In A. Sleiman (Chair) Recent advances in behavioral safety programs in the industry [Symposium]. Association for Behavior Analysis International 49th Annual Conference, Denver, CO.</li>
-        <li>*Laske, M. M., DiGennaro Reed, F. D., & Braren, J. T. B. (2022, September 21-24). Um, so, like… How do we train public speaking? In A. Sleiman (Chair) Use of remote behavioral skills training to teach advanced professional repertoires [Symposium]. Florida Association for Behavior Analysis 42nd Ponte Vedra Beach, FL.</li>
-        <li>*Laske, M. M. & DiGennaro Reed, F. D. (2022, May 26-30). Um, so, like: The effects of behavioral skills training on public speaking behaviors. In J. T. B. Braren (Chair) Demonstrating the versatility of behavioral skills training [Symposium]. Association for Behavior Analysis International 48th Annual Conference, Boston, MA.</li>
-        <li>*Ludwig, T. D. & Laske, M. M.  (2022, May 26-30). Contrasting response class and discriminant behavioral pinpoints: Building criteria to better find and analyze risk. In T. D. Ludwig (Chair) Recent advances in behavioral safety [Symposium]. Association for Behavior Analysis International 48th Annual Conference, Boston, MA.</li>
-        <li>*Laske, M. M. (2022, May 11-13). A stone age battle: Manager vs. employee roles in safety. [Conference session]. Safety in Action Conference, Dallas, TX. https://www.safetyinaction.com/event/14c2b852-21cf-440c-85bc-e663da93fcf1/summary</li>
-        <li>*Laske, M. M. & Ludwig, T. D. (2021, May 28-31). 7-pinpoint criteria to promote risk identification: Preliminary investigation in behavioral safety. In M. M. Laske (Chair) Promoting health, wellness, and safety with organizational behavior management [Symposium]. Association for Behavior Analysis International 47th Annual Conference, Online.</li>
-        <li>*Laske, M. M., Açıkgöz, Y., Ludwig, T. D., & Bergman, S. (2020, May 21-25). Utilizing data analytics to inform safety interventions and reduce adverse safety outcomes. In J. E. Friedel (Chair) Big data and analytics in behavior analysis [Symposium]. Association for Behavior Analysis International 46th Annual Conference, Washington, DC.</li>
-        <li>*Laske, M. M., (2020, April 16). Barriers to employee safety: Improving safety with employee driven processes [Conference session]. 26th Annual ASSP Western Carolina Safety School, Hickory, NC. (Conference canceled)</li>
-        <li>*Laske, M. M., Açıkgöz, Y., Bergman, S., & Ludwig, T. (2020, March 25-27). Utilizing data analytics to improve behavioral safety interventions [Conference session]. Safety in Action Conference, Nashville, TN. (Conference canceled)</li>
-        <li>*Laske, M. M. (2019, October 15-17). So you want to do data analytics? The top five barriers to getting started and how to get past them [Conference session]. Behavioral Safety Now Conference, Orlando, FL.</li>
-        <li>*Laske, M. M., *Sleiman, A., & *Matey, N. (2019, October 15-17). Best practices of BBS: A 15-year review of accredited companies [Conference session]. Behavioral Safety Now Conference, Orlando, FL.</li>
-        <li>*Laske, M. M., (2019, October 3). The eighth deadly sin… Pencil whipping. [Conference Session]. Western Piedmont Safety Council 40th Annual Industrial Safety Workshop, Lenoir, NC.</li>
-    </ul>
-</div>
+    <!-- PROFESSIONAL PRESENTATIONS (20) -->
+    <div class="pres-section" id="professional">
+      <h3>Professional Presentations <small style="font-size:.7em; font-weight:400; color:var(--muted);">&dagger;student contributor &ast;presenter</small></h3>
+      <ul>
+        <li>*Laske, M. M., Leslie, S., Goben, E. J., &amp; DiGennaro Reed, F. D. (2026, May 21-25). The effects of filler sounds, speaker gender, and race on perceived speaking effectiveness and learning outcomes. In M.M. Laske (Chair) [Symposium]. ABAI 52nd Annual Conference, San Francisco, CA.</li>
+        <li>*&dagger;Bradley, A., Laske, M. M., &dagger;McDaniel, C., &dagger;Salazar, I., Dunham, R. &amp; Sleiman, A. (2026, May 21-25). We have always done it that way and nothing went wrong: Variables contributing to deviation in work safety. In N. Matey (Chair) [Symposium]. ABAI 52nd Annual Conference, San Francisco, CA.</li>
+        <li>Sleiman, A., *Olasfdottir, A., Dunham, R., &dagger;Bradley, A., &dagger;McDaniel, C., &dagger;Salazar, I., &amp; Laske, M. M. (2026, May 21-25). Exploring behavioral patterns and risks in a simulated work safety task. In N. Matey (Chair) [Symposium]. ABAI 52nd Annual Conference, San Francisco, CA.</li>
+        <li class="hidden-item">*&dagger;Bradley, A., *&dagger;McDaniel, C., &amp; *&dagger;Olivieri, J. (2025, November 14). Habits, heat maps, and headlines: From workplace safety decisions to public discourse. In M. M. Laske (Chair) [Symposium]. Behavior Analysis Research Colloquium: UNT, Denton, TX.</li>
+        <li class="hidden-item">*Laske, M. M. &amp; DiGennaro Reed, F. D. (2025, May 27-29). Um, so, like, do speech disfluencies matter? A parametric evaluation of filler sounds and words. In M. M. Laske (Chair) [Symposium]. ABAI 51st Annual Conference, Washington, DC.</li>
+        <li class="hidden-item">*Laske, M. M., Goben, E., Bartle, G. E., &amp; DiGennaro Reed, F. D. (2025, May 27-29). The effects of remote group training and video-based training on professional conference presenting behaviors. In M. M. Laske (Chair) [Symposium]. ABAI 51st Annual Conference, Washington, DC.</li>
+        <li class="hidden-item">Laske, M. M. (2024, October 11). My journey in public speaking research: A case study in scientific method [Paper presentation]. Behavior Analysis Research Colloquium: UNT, Denton, TX.</li>
+        <li class="hidden-item">*Giani, L., Ghezzi, G. A., Mazzola, D., &amp; Laske, M. M. (2024, May 25-27). Improving safety leadership performance: An evaluation of behavior-based leadership checklists. In H. M. McGee (Chair) [Symposium]. ABAI 50th Annual Conference, Philadelphia, PA.</li>
+        <li class="hidden-item">*Laske, M. M., DiGennaro Reed, F. D., &amp; Braren, J. T. B. (2023, May 27-29). Um, so, like… How do we train public speaking? In M. M. Laske (Chair) [Symposium]. ABAI 49th Annual Conference, Denver, CO.</li>
+        <li class="hidden-item">Ludwig, T. D., Leslie, J., Açıkgöz, Y., Bergman, S., Granowsky, N., &amp; *Laske, M. M. (2023, May 27-29). Safety analytics in three organizations suggest the probability of injury decreases after a behavioral safety observation. In A. Sleiman (Chair) [Symposium]. ABAI 49th Annual Conference, Denver, CO.</li>
+        <li class="hidden-item">*Laske, M. M., DiGennaro Reed, F. D., &amp; Braren, J. T. B. (2022, September 21-24). Um, so, like… How do we train public speaking? In A. Sleiman (Chair) [Symposium]. FABA 42nd Annual Conference, Ponte Vedra Beach, FL.</li>
+        <li class="hidden-item">*Laske, M. M. &amp; DiGennaro Reed, F. D. (2022, May 26-30). Um, so, like: The effects of behavioral skills training on public speaking behaviors. In J. T. B. Braren (Chair) [Symposium]. ABAI 48th Annual Conference, Boston, MA.</li>
+        <li class="hidden-item">*Ludwig, T. D. &amp; Laske, M. M. (2022, May 26-30). Contrasting response class and discriminant behavioral pinpoints. In T. D. Ludwig (Chair) [Symposium]. ABAI 48th Annual Conference, Boston, MA.</li>
+        <li class="hidden-item">*Laske, M. M. (2022, May 11-13). A stone age battle: Manager vs. employee roles in safety [Conference session]. Safety in Action Conference, Dallas, TX.</li>
+        <li class="hidden-item">*Laske, M. M. &amp; Ludwig, T. D. (2021, May 28-31). 7-pinpoint criteria to promote risk identification. In M. M. Laske (Chair) [Symposium]. ABAI 47th Annual Conference, Online.</li>
+        <li class="hidden-item">*Laske, M. M., Açıkgöz, Y., Ludwig, T. D., &amp; Bergman, S. (2020, May 21-25). Utilizing data analytics to inform safety interventions. In J. E. Friedel (Chair) [Symposium]. ABAI 46th Annual Conference, Washington, DC.</li>
+        <li class="hidden-item">*Laske, M. M. (2020, April 16). Barriers to employee safety [Conference session]. 26th Annual ASSP Western Carolina Safety School, Hickory, NC. (Conference canceled)</li>
+        <li class="hidden-item">*Laske, M. M., Açıkgöz, Y., Bergman, S., &amp; Ludwig, T. (2020, March 25-27). Utilizing data analytics to improve behavioral safety interventions [Conference session]. Safety in Action Conference, Nashville, TN. (Conference canceled)</li>
+        <li class="hidden-item">*Laske, M. M. (2019, October 15-17). So you want to do data analytics? [Conference session]. Behavioral Safety Now Conference, Orlando, FL.</li>
+        <li class="hidden-item">*Laske, M. M., *Sleiman, A., &amp; *Matey, N. (2019, October 15-17). Best practices of BBS: A 15-year review of accredited companies [Conference session]. Behavioral Safety Now Conference, Orlando, FL.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleSection('professional')">Show All (20)</button>
+    </div>
 
+    <!-- POSTER PRESENTATIONS (14) -->
+    <div class="pres-section" id="posters">
+      <h3>Poster Presentations <small style="font-size:.7em; font-weight:400; color:var(--muted);">&dagger;student contributor &ast;presenter</small></h3>
+      <ul>
+        <li>*&dagger;York, K., &dagger;Bradley, A., &dagger;Salazar, I., &dagger;McDaniel, C., Laske, M. M., Dunham, R., Sleiman, A., &amp; Matey, N. (2026, March 24). Exploring behavioral patterns and risks in simulated operations [Poster]. UNT Scholars Day, Denton, TX.</li>
+        <li>*&dagger;Bradley, A., *&dagger;Salazar, I., &dagger;McDaniel, C., &dagger;York, K., Laske, M. M., Dunham, R., Sleiman, A., &amp; Matey, N. (2025, November 21). Exploring behavioral patterns and risks in simulated operations [Poster]. CCBS Leadership and Supervision Conference, Lawrence, KS.</li>
+        <li>*&dagger;McDaniel, C., &dagger;Salazar, I., &dagger;Ashun, S., Gonzalez, J. S., &amp; Laske, M. M. (2025, April 25-26). Hot zones in cold aisles: A heat map analysis of warehouse hazards [Poster]. TxABA 40th Annual Conference, Dallas, TX.</li>
+        <li class="hidden-item">*&dagger;McDaniel, C., &dagger;Salazar, I., &dagger;Ashun, S., Gonzalez, J. S., &amp; Laske, M. M. (2025, April 2). Hot zones in cold aisles: A heat map analysis of warehouse hazards [Poster]. UNT HPS Graduate Student Research Day, Denton, TX.</li>
+        <li class="hidden-item">*&dagger;Bridges, K., Gonzalez, J. S., &amp; Laske, M. M. (2025, March 26-28). A scoping review of participant history descriptions in TAVB [Poster]. APBA 15th Annual Convention, Dallas, TX.</li>
+        <li class="hidden-item">*&dagger;Young, A. M., Ezerins, M. E., Laske, M. M., &amp; Ludwig, T. D. (2022, April 27-29). Safety measurement culture: A survey to assess engagement in safety reporting [Poster]. SIOP Annual Conference, Seattle, WA.</li>
+        <li class="hidden-item">*Pfeiff, N., Oda, F., Gifford, A., Dehart, R., Choi, J., Perniciaro, S., Anis, B., Blackman, A., Laske, M., DiGennaro Reed, F. D., &amp; Reed, D. D. (2021, April 24). Creation and utility of a novel direct observation technique for mask wearing surveillance amidst COVID-19 [Poster]. KansABA Annual Conference, Lawrence, KS.</li>
+        <li class="hidden-item">*Nicholson, R., *Biggs, S., *Linden, C., O'Neil, T., Compagnone, M., Laske, M., Hinson, P., &amp; Açıkgöz, Y. (2019, October 25-26). Suffering from whiplash? The effects of pencil whipping on data variability [Poster]. 15th Annual RCIO Psychology Conference, Chattanooga, TN.</li>
+        <li class="hidden-item">*Young, A., *Bellflowers, R., O'Neil, T., Compagnone, M., Laske, M., Hinson, P., &amp; Açıkgöz, Y. (2019, October 25-26). Does a quota a day keep the (safety) doctor away? [Poster]. 15th Annual RCIO Psychology Conference, Chattanooga, TN.</li>
+        <li class="hidden-item">*Compagnone, M. E., Laske, M. M., Açıkgöz, Y., &amp; Davison, H. K. (2019, October 3-5). Applicant reactions to the use of artificial intelligence in selection [Poster]. APA Technology, Mind, and Society Conference, Washington, D.C.</li>
+        <li class="hidden-item">*Laske, M. M., *Compagnone, M. E., Ludwig, T. D., &amp; Lebbon, A. R. (2019, May 23-27). Integrating behavior analysis and data analytics to target interventions [Poster]. ABAI 45th Annual Conference, Chicago, IL.</li>
+        <li class="hidden-item">*Laske, M. M., *Compagnone, M., Kanthimathinathan, S., Tollefsrud, A., Açıkgöz, Y., &amp; Ludwig, T. (2018, October 26-27). Developing a measure of safety data culture [Poster]. 14th Annual RCIO Psychology Conference, Chattanooga, TN.</li>
+        <li class="hidden-item">*Laske, M. &amp; *Swanson, M. (2017, April 26). Effects of visual prompts on staff use of Natural Environment Teaching [Poster]. WMU Student Poster Session, Kalamazoo, MI.</li>
+        <li class="hidden-item">Newhouse, M., *Laske, M., Rulison, C. L., &amp; Frieder, J. E. (2016, September 14-16). Effects of generalized imitation training on functional speech acquisition during PECS training [Poster]. Michigan Autism Conference, Kalamazoo, MI.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleSection('posters')">Show All (14)</button>
+    </div>
 
-</body>
-
-<section id="Contact">
-  <div class="bottom-container">
-    <h2 class="Contact-msg">Please contact me! I look forward to hearing from you.</h2>
-    <a class="footer-link btn btn-lg btn-light" href="mailto:matthewlaske@outlook.com" role="button"><i class="far fa-envelope"></i></a>
-    <a class="footer-link btn btn-lg btn-light" href="https://www.linkedin.com/in/matthew-laske/"><i class="fab fa-linkedin"></i></a>
-    <a class="footer-link btn btn-lg btn-light" href="https://www.researchgate.net/profile/Matthew-Laske"><i class="fab fa-researchgate"></i></a>
-    <p class="copyright">© 2026 Matthew Laske.</p>
   </div>
-</section>
-</body>
 
+  <section id="Contact">
+    <div class="bottom-container">
+      <h2 class="Contact-msg">Let's connect — I'd love to hear from you.</h2>
+      <a class="footer-link" href="mailto:matthewlaske@outlook.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+      <a class="footer-link" href="https://www.linkedin.com/in/matthew-laske/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a class="footer-link" href="https://www.researchgate.net/profile/Matthew-Laske" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+      <p class="copyright">&copy; 2026 Matthew Laske.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+  function toggleSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    var items = section.querySelectorAll('.hidden-item');
+    var btn = section.querySelector('.expand-btn');
+    var isShown = items[0] && items[0].classList.contains('shown');
+    items.forEach(function(item) {
+      if (isShown) { item.classList.remove('shown'); }
+      else { item.classList.add('shown'); }
+    });
+    if (isShown) {
+      btn.textContent = 'Show All (' + (section.querySelectorAll('li').length) + ')';
+    } else {
+      btn.textContent = 'Show Less';
+    }
+  }
+  </script>
+</body>
 </html>
